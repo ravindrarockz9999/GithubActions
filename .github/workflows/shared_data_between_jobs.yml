@@ -8,7 +8,7 @@ jobs:
       - run: echo "Hello World" > file.txt
       - uses: actions/upload-artifact@v4
         with:
-          name: file path to upload
+          name: file
           path: file.txt
 
   job_2:
@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: file path to download
+          name: file
       - run: |
             ls -la
             cat file.txt
