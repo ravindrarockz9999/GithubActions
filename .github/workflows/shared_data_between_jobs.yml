@@ -19,4 +19,6 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: file path to download
-      - run: cat file/file.txt
+      - run: |
+            ls -la
+            cat file.txt
